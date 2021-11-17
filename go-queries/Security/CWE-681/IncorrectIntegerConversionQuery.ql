@@ -20,7 +20,7 @@ import semmle.go.security.IncorrectIntegerConversionLib
 from
   DataFlow::PathNode source, DataFlow::PathNode sink, ConversionWithoutBoundsCheckConfig cfg,
   DataFlow::CallNode call
-where cfg.hasFlowPath(source, sink) and call.getResult(0) = source.getNode()
+where cfg.hasFlowPath(source, sink) and call.getResult(0) = source.getNode() and not sink.getNode().getFile().toString().matches("%.pb.go")
 select sink.getNode(), source, sink,
   "Incorrect conversion of " +
     describeBitSize(cfg.getSourceBitSize(), getIntTypeBitSize(source.getNode().getFile())) +
