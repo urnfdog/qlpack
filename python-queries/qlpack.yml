@@ -1,0 +1,8 @@
+name: codeql/python-queries
+version: 0.0.2+62d25b6e1276c14cc3acbb9ee399f6f6a71ef551
+dependencies:
+    codeql/python-all: "*"
+    codeql/suite-helpers: "*"
+suites: codeql-suites
+extractor: python
+defaultSuiteFile: codeql-suites/python-code-scanning.qls
