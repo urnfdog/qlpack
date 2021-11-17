@@ -1,0 +1,8 @@
+---
+library: false
+name: codeql/suite-helpers
+version: 0.0.2
+buildMetadata:
+  sha: 4b82840e9df0db82d9bf23fb88f23661072ef766
+  creationTime: 2021-11-15T17:14:38.449250Z
+  cliVersion: 2.7.1

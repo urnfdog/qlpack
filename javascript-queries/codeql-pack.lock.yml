@@ -1,0 +1,10 @@
+---
+dependencies:
+  codeql/javascript-all:
+    version: 0.0.3
+  codeql/javascript-upgrades:
+    version: 0.0.3
+  codeql/suite-helpers:
+    version: 0.0.2
+compiled: true
+lockVersion: 1.0.0
