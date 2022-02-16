@@ -1,10 +1,8 @@
 ---
 dependencies:
   codeql/go-all:
-    version: 0.0.2
-  codeql/go-upgrades:
-    version: 0.0.2
+    version: 0.0.8
   codeql/suite-helpers:
-    version: 0.0.2
-compiled: true
+    version: 0.0.3
+compiled: false
 lockVersion: 1.0.0
