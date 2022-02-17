@@ -5,7 +5,6 @@
  */
 
 import go
-private import semmle.go.security.SensitiveActions
 private import CryptoLibraries
 
 /**
@@ -29,11 +28,8 @@ module AllCryptoAlgorithm {
    */
   abstract class Sanitizer extends DataFlow::Node { }
 
-  /**
-   * A sensitive source.
-   */
-  class SensitiveSource extends Source {
-    SensitiveSource() { this.asExpr() instanceof SensitiveExpr }
+  class ExprNode extends Source {
+    ExprNode() { this.asExpr() instanceof Expr }
   }
 
   /**
