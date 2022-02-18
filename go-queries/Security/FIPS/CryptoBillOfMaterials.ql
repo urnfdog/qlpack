@@ -1,7 +1,7 @@
 /**
  * @name Crytographic Bill of Materials
  * @description Listing of cryptographic functions used in the system
- * @kind path-problem
+ * @kind problem
  * @precision very-high
  * @id go/cryptographic-bill-of-materials
  * @tags security
@@ -10,10 +10,10 @@
  */
 
 import go
-import CryptoBOMCustomizations::AllCryptoAlgorithm
-import DataFlow::PathGraph
+import CryptoLibraries::AlgorithmNames
 
-from Configuration cfg, DataFlow::PathNode source, DataFlow::PathNode sink
-where cfg.hasFlowPath(source, sink)
-select sink.getNode(), source, sink, "$@ is likely a cryptographic algorithm acting on sensitive data",
-  source.getNode(), "Sensitive data"
+// This is too specific - we're missing pkg/security/probe/constantfetch/fetcher.go: hasher:   md5.New()
+// Need to also find expressions, maybe?
+from DataFlow::CallNode c
+where isWeakHashingAlgorithm(c.getTarget().getPackage().getName().toUpperCase()) or isStrongHashingAlgorithm(c.getTarget().getPackage().getName().toUpperCase())
+select c.getTarget().getPackage().getName(), "Cryptographic usage detected in " + c.getFile() + " and in line " + c.getEndLine()

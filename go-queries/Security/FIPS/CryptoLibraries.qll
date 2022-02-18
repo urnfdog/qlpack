@@ -18,7 +18,11 @@ import go
  * https://en.wikipedia.org/wiki/Strong_cryptography#Examples
  * https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html
  */
-private module AlgorithmNames {
+
+// TODO - pull these in: https://pkg.go.dev/golang.org/x/crypto and probably create an entire offshoot format for FIPS
+// I don't think it makes sense to continue to try to beat this into a shape that works - this is meant to be very specific
+// with very low false positive rates, whereas we just want a list of crypto used and is not the right setup for this purpose
+module AlgorithmNames {
   predicate isStrongHashingAlgorithm(string name) {
     name =
       [
