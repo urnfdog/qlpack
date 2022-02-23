@@ -6,6 +6,7 @@
  * @id go/crypto-fips-check
  * @tags security
  * @security-severity 1.0
+ * @problem.severity warning
  */
 
 import go
