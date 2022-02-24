@@ -10,7 +10,7 @@ module AlgorithmNames {
     predicate isApprovedHashingAlgorithm(string name) {
         name =
             [
-                "SHA3", "HMAC", "SHA256", "SHA384", "SHA512", "ES256", "ES384",
+                "SHA2", "SHA3", "HMAC", "SHA256", "SHA384", "SHA512", "ES256", "ES384",
                 "DSA", "ECDSA", "ECDSA256", "ECDSA384", "ECDSA512", "ES512"
             ]
     }
@@ -27,7 +27,7 @@ module AlgorithmNames {
     predicate isApprovedEncryptionAlgorithm(string name) {
         name =
             [
-                 "AES128", "AES192", "AES256", "RSA"
+                 "AES", "AES128", "AES192", "AES256", "RSA"
             ]
     }
 
@@ -64,8 +64,7 @@ module AlgorithmNames {
     predicate isMiscellaneousToBeFlagged(string name) {
         name =
             [
-                "NACL", "SSH", "RAND", "TLS", "SUBTLE",
-                "X509", "SHA2", "AES"
+                "NACL", "SSH", "RAND", "TLS", "SUBTLE", "X509"
             ]
     }
 }
