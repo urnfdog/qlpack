@@ -3,7 +3,7 @@
  * @description Part of a set of checks for FIPS Crytographic Bill of Materials
  * @kind problem
  * @precision very-high
- * @id go/cryptographic-bill-of-materials
+ * @id go/cbom-disallowed-hashing-package
  * @tags security
  * @security-severity 1.0
  * @problem.severity warning
