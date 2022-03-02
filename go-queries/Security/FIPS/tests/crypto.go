@@ -13,6 +13,8 @@ import (
 	"crypto/tls"
 	"golang.org/x/crypto/bcrypt"
 	"golang.org/x/crypto/hkdf"
+	openssl "github.com/Luzifer/go-openssl/v4"
+	"github.com/spacemonkeygo/openssl"
 )
 
 func main() {
