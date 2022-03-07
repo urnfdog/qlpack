@@ -15,10 +15,12 @@ import (
 	"golang.org/x/crypto/hkdf"
 	openssl "github.com/Luzifer/go-openssl/v4"
 	"github.com/spacemonkeygo/openssl"
+	"github.com/gosnmp/gosnmp"
 )
 
 func main() {
 	foo := "bar"
+	var baz gosnmp.SnmpV3AuthProtocol
 
     // DETECTED - Approved Encryption Callee
 	test.Aes128(foo)
@@ -31,6 +33,9 @@ func main() {
 
 	// DETECTED - Approved Hash Package
 	sha256.Sum256(foo)
+
+	// DETECTED - Approved Hash Expression
+	baz = gosnmp.SHA256
 
 	// DETECTED - Approved Password Callee
 	test.Bcrypt(foo)
@@ -49,6 +54,9 @@ func main() {
 
 	// DETECTED - Disallowed Hash Package
 	md5.Sum(foo)
+
+	// DETECTED - Disallowed Hash Expression
+	baz = gosnmp.MD5
 
 	// DETECTED - Disallowed Password Callee
     test.Hkdf(foo)
