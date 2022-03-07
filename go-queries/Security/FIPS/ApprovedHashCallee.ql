@@ -1,9 +1,9 @@
 /**
- * @name CBOM - Approved Hashing Method
- * @description Part of a set of checks for FIPS Crytographic Bill of Materials
+ * @name CF - Approved Hashing Method
+ * @description Part of a set of checks for cryptographic footprint
  * @kind problem
  * @precision very-high
- * @id go/cbom-approved-hashing-method
+ * @id go/cf-approved-hashing-method
  * @tags security
  * @security-severity 1.0
  * @problem.severity warning
@@ -11,7 +11,6 @@
 
 import go
 import FIPSCryptoLibraries::AlgorithmNames
-
 
 from DataFlow::CallNode c
 where isApprovedHashingAlgorithm(c.getCalleeName().toUpperCase())

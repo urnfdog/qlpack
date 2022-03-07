@@ -1,9 +1,9 @@
 /**
- * @name CBOM - Approved Hashing Package
- * @description Part of a set of checks for FIPS Crytographic Bill of Materials
+ * @name CF - Approved Hashing Package
+ * @description Part of a set of checks for cryptographic footprint
  * @kind problem
  * @precision very-high
- * @id go/cbom-approved-hashing-package
+ * @id go/cf-approved-hashing-package
  * @tags security
  * @security-severity 1.0
  * @problem.severity warning

@@ -1,9 +1,9 @@
 /**
- * @name CBOM - Go Mod Library Check
- * @description Part of a set of checks for FIPS Crytographic Bill of Materials.  Naively looks for usage of go crypto or openssl libraries.
+ * @name CF - Go Mod Library Check
+ * @description Part of a set of checks for cryptographic footprint.  Naively looks for usage of go crypto or openssl libraries.
  * @kind problem
  * @precision very-high
- * @id go/cbom-mod-library-check
+ * @id go/cf-mod-library-check
  * @tags security
  * @security-severity 1.0
  * @problem.severity warning

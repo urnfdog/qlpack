@@ -1,9 +1,9 @@
 /**
- * @name CBOM - Miscellaneous Crypto Method
- * @description Part of a set of checks for FIPS Crytographic Bill of Materials
+ * @name CF - Miscellaneous Crypto Method
+ * @description Part of a set of checks for cryptographic footprint
  * @kind problem
  * @precision very-high
- * @id go/cbom-miscellaneous-crypto-method
+ * @id go/cf-miscellaneous-crypto-method
  * @tags security
  * @security-severity 1.0
  * @problem.severity warning

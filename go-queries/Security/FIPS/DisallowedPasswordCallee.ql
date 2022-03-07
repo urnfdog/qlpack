@@ -1,9 +1,9 @@
 /**
- * @name CBOM - Disallowed Password Hashing Method
- * @description Part of a set of checks for FIPS Crytographic Bill of Materials
+ * @name CF - Disallowed Password Hashing Method
+ * @description Part of a set of checks for cryptographic footprint
  * @kind problem
  * @precision very-high
- * @id go/cbom-disallowed-password-method
+ * @id go/cf-disallowed-password-method
  * @tags security
  * @security-severity 1.0
  * @problem.severity warning

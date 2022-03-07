@@ -1,9 +1,9 @@
 /**
- * @name CBOM - Disallowed Encryption Method
- * @description Part of a set of checks for FIPS Crytographic Bill of Materials
+ * @name CF - Disallowed Encryption Method
+ * @description Part of a set of checks for cryptographic footprint
  * @kind problem
  * @precision very-high
- * @id go/cbom-disallowed-encryption-method
+ * @id go/cf-disallowed-encryption-method
  * @tags security
  * @security-severity 1.0
  * @problem.severity warning

@@ -1,5 +1,5 @@
 /**
- * Adapted from the experimental CWE-327 CryptoLibraries for FIPS purposes
+ * Adapted from the experimental CWE-327 CryptoLibraries
  * Currently, this only supports Go
  * Python is going to need its own class
  */
@@ -57,9 +57,7 @@ module AlgorithmNames {
     }
 
     /**
-     * Miscellaneous objects, including things like go crypto's subtle which
-     * are not meant to be used by developers without careful thought or ambiguous
-     * AES/SHA2 could be SHA2 at 224 bits, which is too weak
+     * Miscellaneous objects that may raise a flag
      */
     predicate isMiscellaneousToBeFlagged(string name) {
         name =

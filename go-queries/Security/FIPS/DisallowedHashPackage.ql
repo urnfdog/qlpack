@@ -1,9 +1,9 @@
 /**
- * @name CBOM - Disallowed Hashing Package
- * @description Part of a set of checks for FIPS Crytographic Bill of Materials
+ * @name CF - Disallowed Hashing Package
+ * @description Part of a set of checks for cryptographic footprint
  * @kind problem
  * @precision very-high
- * @id go/cbom-disallowed-hashing-package
+ * @id go/cf-disallowed-hashing-package
  * @tags security
  * @security-severity 1.0
  * @problem.severity warning

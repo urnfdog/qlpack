@@ -1,9 +1,9 @@
 /**
- * @name CBOM - Approved Encryption Method
- * @description Part of a set of checks for FIPS Crytographic Bill of Materials
+ * @name CF - Approved Encryption Method
+ * @description Part of a set of checks for cryptographic footprint
  * @kind problem
  * @precision very-high
- * @id go/cbom-approved-encryption-method
+ * @id go/cf-approved-encryption-method
  * @tags security
  * @security-severity 1.0
  * @problem.severity warning
