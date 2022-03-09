@@ -64,6 +64,9 @@ func main() {
 	// DETECTED - Disallowed Password Package
     hkdf.New(foo, foo, foo, foo)
 
+	// DETECTED - Disallowed AES cipher size
+	aes.NewCipher([]byte("123456789012345"))
+
 	// DETECTED - Misc Flags Callee
     test.tls(foo)
 
@@ -72,6 +75,9 @@ func main() {
 
 	// NOT DETECTED - crypto as a parameter
     test.doingsomething("AES", "MD5", "SHA256")
+
+    // NOT DETECTED - Allowed AES cipher size
+    aes.NewCipher([]byte("1234567890123456"))
 
 }
 
