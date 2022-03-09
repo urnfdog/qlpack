@@ -12,5 +12,5 @@
 import go
 
 from ImportSpec i
-where i.getPath().regexpMatch("crypto/.*") or i.getPath().regexpMatch(".*openssl.*")
+where i.getPath().regexpMatch("crypto/.*|.*openssl.*")
 select i, "Possible crypto import: " + i.getPath()

@@ -37,7 +37,7 @@ module AlgorithmNames {
                 "BLOWFISH", "CAST5", "CHACHA20", "CHACHA20POLY1305", "OPENPGP",
                 "OTR", "SALSA20", "TEA", "TWOFISH", "XTEA", "XTS", "RC4", "DES",
                 "3DES", "RABBIT", "ARC5", "RC5", "TRIPLEDES", "TDEA", "TRIPLEDEA",
-                "ARC2", "RC2", "ARC4", "ARCFOUR"
+                "ARC2", "RC2", "ARC4", "ARCFOUR", "IDEA", "IPES", "GPG"
 
             ]
     }
@@ -62,7 +62,7 @@ module AlgorithmNames {
     predicate isMiscellaneousToBeFlagged(string name) {
         name =
             [
-                "NACL", "SSH", "RAND", "TLS", "SUBTLE", "X509"
+                "NACL", "SSH", "RAND", "RANDOM", "TLS", "SUBTLE", "X509"
             ]
     }
 }
