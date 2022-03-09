@@ -14,4 +14,4 @@ import FIPSCryptoLibraries::AlgorithmNames
 
 from DataFlow::CallNode c
 where isMiscellaneousToBeFlagged(c.getTarget().getPackage().getName().toUpperCase())
-select c, c.getTarget().getPackage().getName().toUpperCase() + " detected in " + c.getFile() + " line " + c.getEndLine()
+select c, "Detected " + c.getTarget().getName() + " from " + c.getTarget().getPackage().getPath()

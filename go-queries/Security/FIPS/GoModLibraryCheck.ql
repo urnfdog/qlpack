@@ -13,4 +13,4 @@ import go
 
 from GoModRequireLine gm
 where gm.getPath().regexpMatch(".*crypto.*") or gm.getPath().regexpMatch(".*openssl.*")
-select gm, gm.getPath() + " may be a possible crypto library"
+select gm, gm.getPath() + " version " + gm.getVersion()

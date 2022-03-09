@@ -14,4 +14,4 @@ import FIPSCryptoLibraries::AlgorithmNames
 
 from DataFlow::CallNode c
 where isDisallowedPasswordHashingAlgorithm(c.getCalleeName().toUpperCase())
-select c, c.getCalleeName().toUpperCase() + " detected in " + c.getFile() + " line " + c.getEndLine()
+select c, "Detected " + c.getTarget().getName() + " from " + c.getTarget().getPackage().getPath()
